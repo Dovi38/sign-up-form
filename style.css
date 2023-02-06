@@ -1,0 +1,145 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(./fonts/Norse-Bold.otf)format('opentype');
+  font-weight: bold;
+}
+
+:root {
+  font-family: Roboto, sans-serif;
+  background: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 75%;
+  margin: auto;
+  background: white;
+  display: flex;
+}
+
+.sidebar {
+  background-image: url('./images/IMG_20220905_151455.jpg');
+  min-height: 100vh;
+  width: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo-container {
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 150px;
+}
+
+img {
+  height: 17vh;
+}
+
+h1 {
+  color: white;
+  font-family: 'Norse-Bold', sans-serif;
+  font-size: 80px;
+}
+
+.text {
+  height: 30vh;
+  padding: 2rem;
+  background-color: rgba(245, 243, 243, 0.822);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.description {
+  width: 75%;
+  font-size: 1.17rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.form-header {
+  padding: 1rem 2rem;
+}
+
+form {
+  border: 2px solid red;
+}
+
+.wrapper {
+
+  box-shadow: 0 4px 6px -6px #222;
+}
+
+.form-field {
+  border: 2px solid orange;
+  padding: 0 2rem;
+  background-color: white;
+  height: 30vh;
+  width: 80%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+.form-btn {
+  padding: 2rem;
+  border: 2px solid blue;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.input-box {
+  margin-bottom: 15px;
+  width: calc(100% /2);
+}
+
+input {
+  width: 70%;
+  height: 1.7rem;
+  outline: none;
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+input:focus {
+  border: 1px solid rgb(68, 117, 209);
+  box-shadow: rgba(46, 81, 146) 1.95px 1.95px 2.6px;
+}
+
+.message {
+  display: none;
+  font-size: 0.7rem;
+  color: red;
+}
+
+.account-btn {
+  padding: 0.5rem 3.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  background-color: #2e5192;
+}
