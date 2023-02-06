@@ -5,12 +5,67 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
   <title>Sign Up Form</title>
 </head>
 
 <body>
+  <main class="container">
+    <aside class="sidebar">
+      <div class="logo-container">
 
+        <img src="./images/odin-lined.png" alt="odin-logo">
+        <h1>ODIN</h1>
+
+      </div>
+    </aside>
+    <div class="content-container">
+      <section class="text">
+        <p class="description">This is not real online service. You know you need something like this in your life to help you realize your deepest dreams.<br>
+          Sign up now to get started.</p>
+        <h3>You know you want to</h3>
+      </section>
+      <h3 class="form-header">Let's do this</h3>
+      <form action="url where form has to be send" method="post">
+        <div class="wrapper">
+          <section class="form-field">
+            <div class="input-box">
+              <label for="first-name">first name</label>
+              <input type="text" id="first-name" placeholder="Ash" name="first-name" required>
+            </div>
+            <div class="input-box">
+              <label for="last-name">last name</label>
+              <input type="text" id="last-name" placeholder="Smith" name="last-name" required>
+            </div>
+            <div class="input-box">
+              <label for="user-email">email</label>
+              <input class="email" type="email" id="user-email" name="email" required>
+            </div>
+            <div class="input-box">
+              <label for="phone-number">phone number</label>
+              <input type="number" id="phone-number" name="phone-number">
+            </div>
+            <div class="input-box">
+              <label for="user-password">password</label>
+              <input class="error" type="password" id="user-password" name="password" required minlength="6">
+              <span class="message">*Passwords do not match</span>
+            </div>
+            <div class="input-box">
+              <label for="user-password">confirm password</label>
+              <input class="error" type="password" id="user-password" name="password" required minlength="6">
+            </div>
+          </section>
+        </div>
+        <section class="form-btn">
+          <button class="account-btn" type="submit">Create Account</button>
+          <p>Already have an account? Log in</p>
+        </section>
+
+      </form>
+
+    </div>
+  </main>
 
 
   <script src="script.js"></script>
