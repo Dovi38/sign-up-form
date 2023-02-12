@@ -1,22 +1,29 @@
 const userPassword = document.querySelector("#user-password");
 const repeatPassword = document.querySelector("#repeat-password");
 const message = document.querySelector(".message");
-const passInput = document.querySelectorAll(".error");
-console.log(userPassword.value);
+const submitButton = document.querySelector(".account-btn");
+const email = document.querySelector("#user-email");
 
-repeatPassword.addEventListener("input", (e) => {
-  if (userPassword.value === "" || repeatPassword.value === "") {
+const emailInput = () => {
+  if (email) {
+  }
+};
+email.addEventListener("input", emailInput);
+
+repeatPassword.addEventListener("input", () => {
+  //userPassword.classList.remove("error");
+  //repeatPassword.classList.remove("error");
+  if (userPassword.value !== repeatPassword.value) {
+    userPassword.classList.add("error");
+    repeatPassword.classList.add("error");
     message.style.display = "block";
-    message.textContent = "Please enter password";
-  } else if (userPassword.value !== repeatPassword.value) {
-    userPassword.style.border = "2px solid red";
-    repeatPassword.style.border = "2px solid red";
-    message.style.display = "block";
+    return false;
   } else {
+    userPassword.classList.add("valid");
+    repeatPassword.classList.add("valid");
     message.style.display = "block";
-    userPassword.style.border = "2px solid green";
-    repeatPassword.style.border = "2px solid green";
     message.style.color = "green";
     message.textContent = "*Password match";
+    return true;
   }
 });
